@@ -1,0 +1,402 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     spambase_csv
+Instances:    4601
+Attributes:   58
+              word_freq_make
+              word_freq_address
+              word_freq_all
+              word_freq_3d
+              word_freq_our
+              word_freq_over
+              word_freq_remove
+              word_freq_internet
+              word_freq_order
+              word_freq_mail
+              word_freq_receive
+              word_freq_will
+              word_freq_people
+              word_freq_report
+              word_freq_addresses
+              word_freq_free
+              word_freq_business
+              word_freq_email
+              word_freq_you
+              word_freq_credit
+              word_freq_your
+              word_freq_font
+              word_freq_000
+              word_freq_money
+              word_freq_hp
+              word_freq_hpl
+              word_freq_george
+              word_freq_650
+              word_freq_lab
+              word_freq_labs
+              word_freq_telnet
+              word_freq_857
+              word_freq_data
+              word_freq_415
+              word_freq_85
+              word_freq_technology
+              word_freq_1999
+              word_freq_parts
+              word_freq_pm
+              word_freq_direct
+              word_freq_cs
+              word_freq_meeting
+              word_freq_original
+              word_freq_project
+              word_freq_re
+              word_freq_edu
+              word_freq_table
+              word_freq_conference
+              char_freq_%3B
+              char_freq_%28
+              char_freq_%5B
+              char_freq_%21
+              char_freq_%24
+              char_freq_%23
+              capital_run_length_average
+              capital_run_length_longest
+              capital_run_length_total
+              class
+Test mode:    split 70% train, remainder test
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 2
+Within cluster sum of squared errors: 805.8544935025184
+
+Initial starting points (random):
+
+Cluster 0: 0,0,0.48,0,0.48,0.48,0.48,0,0,0.96,0,0,0,0,0,0,0.96,0,3.36,0,0.96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.163,0,0.163,0,0,1.696,17,95,1
+Cluster 1: 0,0.27,0,0,0,0,0,0,0,0,0,1.94,0,0,0,0,0.27,0,1.39,0,0,0,0,0,0.83,0.55,0,0,0,0.83,0,0,0,0,0,0,0,0,0,0,0,0,0,0.27,0,0,0,0,0.128,0,0,0,0,0,1.197,6,109,0
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                          Cluster#
+Attribute                     Full Data          0          1
+                               (4601.0)   (1813.0)   (2788.0)
+=============================================================
+word_freq_make                   0.1046     0.1523     0.0735
+word_freq_address                 0.213     0.1646     0.2445
+word_freq_all                    0.2807     0.4038     0.2006
+word_freq_3d                     0.0654     0.1647     0.0009
+word_freq_our                    0.3122      0.514      0.181
+word_freq_over                   0.0959     0.1749     0.0445
+word_freq_remove                 0.1142     0.2754     0.0094
+word_freq_internet               0.1053     0.2081     0.0384
+word_freq_order                  0.0901     0.1701      0.038
+word_freq_mail                   0.2394     0.3505     0.1672
+word_freq_receive                0.0598     0.1184     0.0217
+word_freq_will                   0.5417       0.55     0.5363
+word_freq_people                 0.0939     0.1435     0.0617
+word_freq_report                 0.0586     0.0836     0.0424
+word_freq_addresses              0.0492     0.1121     0.0083
+word_freq_free                   0.2488     0.5184     0.0736
+word_freq_business               0.1426     0.2875     0.0483
+word_freq_email                  0.1847     0.3192     0.0973
+word_freq_you                    1.6621     2.2645     1.2703
+word_freq_credit                 0.0856     0.2055     0.0076
+word_freq_your                   0.8098     1.3804     0.4387
+word_freq_font                   0.1212      0.238     0.0452
+word_freq_000                    0.1016     0.2471     0.0071
+word_freq_money                  0.0943     0.2129     0.0171
+word_freq_hp                     0.5495     0.0175     0.8955
+word_freq_hpl                    0.2654     0.0092      0.432
+word_freq_george                 0.7673     0.0015     1.2653
+word_freq_650                    0.1248     0.0188     0.1938
+word_freq_lab                    0.0989     0.0007     0.1628
+word_freq_labs                   0.1029      0.006     0.1659
+word_freq_telnet                 0.0648     0.0013      0.106
+word_freq_857                     0.047     0.0005     0.0773
+word_freq_data                   0.0972     0.0146      0.151
+word_freq_415                    0.0478     0.0018     0.0778
+word_freq_85                     0.1054     0.0069     0.1695
+word_freq_technology             0.0975     0.0295     0.1417
+word_freq_1999                    0.137     0.0435     0.1977
+word_freq_parts                  0.0132     0.0047     0.0187
+word_freq_pm                     0.0786     0.0124     0.1217
+word_freq_direct                 0.0648     0.0367     0.0831
+word_freq_cs                     0.0437     0.0001      0.072
+word_freq_meeting                0.1323     0.0024     0.2168
+word_freq_original               0.0461     0.0085     0.0706
+word_freq_project                0.0792     0.0062     0.1266
+word_freq_re                     0.3012     0.1251     0.4158
+word_freq_edu                    0.1798     0.0147     0.2872
+word_freq_table                  0.0054     0.0012     0.0082
+word_freq_conference             0.0319     0.0021     0.0512
+char_freq_%3B                    0.0386     0.0206     0.0503
+char_freq_%28                     0.139      0.109     0.1586
+char_freq_%5B                     0.017     0.0082     0.0227
+char_freq_%21                    0.2691     0.5137       0.11
+char_freq_%24                    0.0758     0.1745     0.0116
+char_freq_%23                    0.0442     0.0789     0.0217
+capital_run_length_average       5.1915     9.5192     2.3773
+capital_run_length_longest      52.1728   104.3933    18.2145
+capital_run_length_total       283.2893   470.6194   161.4709
+class                             0.394          1          0
+
+
+
+
+Time taken to build model (full training data) : 0.03 seconds
+
+=== Model and evaluation on test split ===
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 675.2060215254899
+
+Initial starting points (random):
+
+Cluster 0: 0,0,1.53,0,0,0,0,0,0,0,1.53,0,0,0,0,0,0,0,3.07,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.53,0,0,0,0,0,0,1.434,0,0,7.055,75,127,1
+Cluster 1: 0.1,0.2,1.01,0,0.8,0.8,0.5,0,0.8,0.1,0.3,0.7,0.3,0,1.61,0.1,0,1.11,1.31,0.2,0.7,0,0.6,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.2,0,0.1,0.1,0,0,0,0.11,0,0.49,0.158,0.015,8.55,669,1351,1
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                          Cluster#
+Attribute                     Full Data          0          1
+                               (3220.0)   (1948.0)   (1272.0)
+=============================================================
+word_freq_make                   0.1061     0.0772     0.1504
+word_freq_address                0.1933     0.2113     0.1657
+word_freq_all                    0.2763     0.1963     0.3989
+word_freq_3d                      0.056     0.0007     0.1407
+word_freq_our                    0.3153     0.1797     0.5228
+word_freq_over                   0.0986     0.0471     0.1775
+word_freq_remove                 0.1191     0.0086     0.2882
+word_freq_internet               0.1103       0.04     0.2178
+word_freq_order                  0.0898     0.0401      0.166
+word_freq_mail                   0.2352     0.1638     0.3446
+word_freq_receive                0.0602     0.0224     0.1181
+word_freq_will                   0.5483     0.5446     0.5539
+word_freq_people                  0.094     0.0661     0.1367
+word_freq_report                 0.0593      0.044     0.0827
+word_freq_addresses              0.0508     0.0094     0.1141
+word_freq_free                   0.2562     0.0816     0.5236
+word_freq_business               0.1441     0.0523     0.2846
+word_freq_email                  0.1837     0.1012     0.3102
+word_freq_you                    1.6557     1.2526     2.2729
+word_freq_credit                 0.0906     0.0068     0.2189
+word_freq_your                   0.8229     0.4391     1.4106
+word_freq_font                    0.126     0.0367     0.2626
+word_freq_000                    0.0936     0.0068     0.2264
+word_freq_money                  0.0947     0.0131     0.2197
+word_freq_hp                     0.5603     0.9132       0.02
+word_freq_hpl                    0.2763     0.4498     0.0106
+word_freq_george                 0.7696     1.2709     0.0019
+word_freq_650                    0.1217     0.1869     0.0218
+word_freq_lab                    0.0976     0.1609     0.0007
+word_freq_labs                    0.099     0.1606     0.0047
+word_freq_telnet                 0.0642      0.105     0.0018
+word_freq_857                    0.0445     0.0731     0.0007
+word_freq_data                   0.0959     0.1503     0.0127
+word_freq_415                     0.045     0.0736     0.0012
+word_freq_85                     0.1084     0.1741     0.0078
+word_freq_technology             0.0934     0.1367     0.0272
+word_freq_1999                   0.1434     0.2081     0.0443
+word_freq_parts                  0.0128     0.0178     0.0051
+word_freq_pm                     0.0809     0.1244     0.0142
+word_freq_direct                 0.0611     0.0788     0.0339
+word_freq_cs                     0.0486     0.0803     0.0001
+word_freq_meeting                0.1338     0.2197     0.0023
+word_freq_original               0.0474     0.0739     0.0068
+word_freq_project                0.0741     0.1183     0.0064
+word_freq_re                     0.2927     0.3987     0.1303
+word_freq_edu                    0.1799     0.2897     0.0116
+word_freq_table                  0.0067     0.0101     0.0014
+word_freq_conference             0.0345      0.056     0.0017
+char_freq_%3B                    0.0372     0.0474     0.0215
+char_freq_%28                    0.1383     0.1598     0.1054
+char_freq_%5B                    0.0168     0.0226     0.0079
+char_freq_%21                    0.2803     0.1225      0.522
+char_freq_%24                    0.0711      0.012     0.1617
+char_freq_%23                    0.0458     0.0202     0.0849
+capital_run_length_average       5.0555      2.287     9.2954
+capital_run_length_longest      49.7134    17.7849    98.6101
+capital_run_length_total       282.2149   167.0329   458.6101
+class                             0.395          0          1
+
+
+
+
+Time taken to build model (percentage split) : 0.04 seconds
+
+Clustered Instances
+
+0       840 ( 61%)
+1       541 ( 39%)
+
+
+
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     spambase_csv
+Instances:    4601
+Attributes:   58
+              word_freq_make
+              word_freq_address
+              word_freq_all
+              word_freq_3d
+              word_freq_our
+              word_freq_over
+              word_freq_remove
+              word_freq_internet
+              word_freq_order
+              word_freq_mail
+              word_freq_receive
+              word_freq_will
+              word_freq_people
+              word_freq_report
+              word_freq_addresses
+              word_freq_free
+              word_freq_business
+              word_freq_email
+              word_freq_you
+              word_freq_credit
+              word_freq_your
+              word_freq_font
+              word_freq_000
+              word_freq_money
+              word_freq_hp
+              word_freq_hpl
+              word_freq_george
+              word_freq_650
+              word_freq_lab
+              word_freq_labs
+              word_freq_telnet
+              word_freq_857
+              word_freq_data
+              word_freq_415
+              word_freq_85
+              word_freq_technology
+              word_freq_1999
+              word_freq_parts
+              word_freq_pm
+              word_freq_direct
+              word_freq_cs
+              word_freq_meeting
+              word_freq_original
+              word_freq_project
+              word_freq_re
+              word_freq_edu
+              word_freq_table
+              word_freq_conference
+              char_freq_%3B
+              char_freq_%28
+              char_freq_%5B
+              char_freq_%21
+              char_freq_%24
+              char_freq_%23
+              capital_run_length_average
+              capital_run_length_longest
+              capital_run_length_total
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 2
+Within cluster sum of squared errors: 805.8544935025184
+
+Initial starting points (random):
+
+Cluster 0: 0,0,0.48,0,0.48,0.48,0.48,0,0,0.96,0,0,0,0,0,0,0.96,0,3.36,0,0.96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.163,0,0.163,0,0,1.696,17,95,1
+Cluster 1: 0,0.27,0,0,0,0,0,0,0,0,0,1.94,0,0,0,0,0.27,0,1.39,0,0,0,0,0,0.83,0.55,0,0,0,0.83,0,0,0,0,0,0,0,0,0,0,0,0,0,0.27,0,0,0,0,0.128,0,0,0,0,0,1.197,6,109,0
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                          Cluster#
+Attribute                     Full Data          0          1
+                               (4601.0)   (1813.0)   (2788.0)
+=============================================================
+word_freq_make                   0.1046     0.1523     0.0735
+word_freq_address                 0.213     0.1646     0.2445
+word_freq_all                    0.2807     0.4038     0.2006
+word_freq_3d                     0.0654     0.1647     0.0009
+word_freq_our                    0.3122      0.514      0.181
+word_freq_over                   0.0959     0.1749     0.0445
+word_freq_remove                 0.1142     0.2754     0.0094
+word_freq_internet               0.1053     0.2081     0.0384
+word_freq_order                  0.0901     0.1701      0.038
+word_freq_mail                   0.2394     0.3505     0.1672
+word_freq_receive                0.0598     0.1184     0.0217
+word_freq_will                   0.5417       0.55     0.5363
+word_freq_people                 0.0939     0.1435     0.0617
+word_freq_report                 0.0586     0.0836     0.0424
+word_freq_addresses              0.0492     0.1121     0.0083
+word_freq_free                   0.2488     0.5184     0.0736
+word_freq_business               0.1426     0.2875     0.0483
+word_freq_email                  0.1847     0.3192     0.0973
+word_freq_you                    1.6621     2.2645     1.2703
+word_freq_credit                 0.0856     0.2055     0.0076
+word_freq_your                   0.8098     1.3804     0.4387
+word_freq_font                   0.1212      0.238     0.0452
+word_freq_000                    0.1016     0.2471     0.0071
+word_freq_money                  0.0943     0.2129     0.0171
+word_freq_hp                     0.5495     0.0175     0.8955
+word_freq_hpl                    0.2654     0.0092      0.432
+word_freq_george                 0.7673     0.0015     1.2653
+word_freq_650                    0.1248     0.0188     0.1938
+word_freq_lab                    0.0989     0.0007     0.1628
+word_freq_labs                   0.1029      0.006     0.1659
+word_freq_telnet                 0.0648     0.0013      0.106
+word_freq_857                     0.047     0.0005     0.0773
+word_freq_data                   0.0972     0.0146      0.151
+word_freq_415                    0.0478     0.0018     0.0778
+word_freq_85                     0.1054     0.0069     0.1695
+word_freq_technology             0.0975     0.0295     0.1417
+word_freq_1999                    0.137     0.0435     0.1977
+word_freq_parts                  0.0132     0.0047     0.0187
+word_freq_pm                     0.0786     0.0124     0.1217
+word_freq_direct                 0.0648     0.0367     0.0831
+word_freq_cs                     0.0437     0.0001      0.072
+word_freq_meeting                0.1323     0.0024     0.2168
+word_freq_original               0.0461     0.0085     0.0706
+word_freq_project                0.0792     0.0062     0.1266
+word_freq_re                     0.3012     0.1251     0.4158
+word_freq_edu                    0.1798     0.0147     0.2872
+word_freq_table                  0.0054     0.0012     0.0082
+word_freq_conference             0.0319     0.0021     0.0512
+char_freq_%3B                    0.0386     0.0206     0.0503
+char_freq_%28                     0.139      0.109     0.1586
+char_freq_%5B                     0.017     0.0082     0.0227
+char_freq_%21                    0.2691     0.5137       0.11
+char_freq_%24                    0.0758     0.1745     0.0116
+char_freq_%23                    0.0442     0.0789     0.0217
+capital_run_length_average       5.1915     9.5192     2.3773
+capital_run_length_longest      52.1728   104.3933    18.2145
+capital_run_length_total       283.2893   470.6194   161.4709
+class                             0.394          1          0
+
+
+
+
+Time taken to build model (full training data) : 0.04 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1813 ( 39%)
+1      2788 ( 61%)
+
