@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dataset = pd.read_csv('spambase_csv.csv')
+dataset = pd.read_csv('spambase.csv')
 X = dataset.drop('class', axis=1)
 y = dataset['class']
 from sklearn.model_selection import train_test_split
@@ -14,7 +14,7 @@ scaler.fit(X_train)
 X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors=17)
+classifier = KNeighborsClassifier(n_neighbors=9)
 classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 from sklearn.metrics import classification_report, confusion_matrix

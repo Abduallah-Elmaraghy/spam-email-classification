@@ -23,18 +23,18 @@ dataset = pd.read_csv('spambase.csv')
 # Preprocessing Phase
 
 # Checking having missing values
-#print(dataset['stalk-root'].value_counts())
+print(dataset['class'].value_counts())
 
 # Replace missing values (NaN) with bulbbous stalk roots
-#dataset['stalk-root'].replace(np.nan, 'b', inplace = True)
+dataset['class'].replace(np.nan, 'b', inplace = True)
 
 # Encoding textual values: Converting lingustic values to numerical values
-#mappings = list()
-#encoder = LabelEncoder()
-#for column in range(len(dataset.columns)):
-#    dataset[dataset.columns[column]] = encoder.fit_transform(dataset[dataset.columns[column]])
-#    mappings_dict = {index: label for index, label in enumerate(encoder.classes_)}
-#    mappings.append(mappings_dict)
+mappings = list()
+encoder = LabelEncoder()
+for column in range(len(dataset.columns)):
+    dataset[dataset.columns[column]] = encoder.fit_transform(dataset[dataset.columns[column]])
+    mappings_dict = {index: label for index, label in enumerate(encoder.classes_)}
+    mappings.append(mappings_dict)
     
 # Separating class label from the dataset features 
 X = dataset.drop('class', axis=1)
