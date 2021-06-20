@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 
 raw_df = pd.read_csv('spambase.csv')
-raw_df = raw_df.drop('RowId', axis = 1) 
+raw_df = raw_df.drop('class', axis = 1) 
 raw_df.fillna(method ='ffill', inplace = True) 
 raw_df.head(2)
 
