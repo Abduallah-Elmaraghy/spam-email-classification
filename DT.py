@@ -3,9 +3,7 @@
 Created on Sun Jun 20 00:41:21 2021
 
 @author: Mi8a
-"""
-
-import numpy as nm  
+""" 
 import matplotlib.pyplot as plt  
 import pandas as pd  
   
@@ -22,7 +20,7 @@ y = dataset['class']
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20)
 from sklearn.tree import DecisionTreeClassifier, plot_tree
-classifier = DecisionTreeClassifier()
+classifier = DecisionTreeClassifier(random_state=25)
 classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 
@@ -33,7 +31,7 @@ print(classification_report(y_test, y_pred))
 # Tree Visualisation
 
 fig = plt.figure(figsize=(100,80))
-plot = plot_tree(classifier, feature_names=list(dataset.columns), class_names=['edible', 'poisonous'],filled=True)
+plot = plot_tree(classifier, feature_names=list(dataset.columns), class_names=['Spam', 'NotSpam'],filled=True)
 for i in plot:
     arrow = i.arrow_patch
     if arrow is not None:
